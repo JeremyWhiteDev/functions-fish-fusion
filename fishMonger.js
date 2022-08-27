@@ -6,7 +6,7 @@ export const mongerInventory = () => {
   //the fishh monger doesn't buy any fish priced higher than $7.50
   let filteredPrice = inventory.filter((obj) => obj.price < 7.5);
 
-  //thethe fishmonger lets the chef of a restaureant dictate max budget per fish
+  //the fishmonger lets the chef of a restaureant dictate max budget per fish
   let chefChoice = filteredPrice.filter((obj) => obj.price < 5);
   //each fish object provided by the fishmonger should have a quantity of 10 instead
   chefChoice.forEach((obj) => (obj.amount = 10));
